@@ -1,12 +1,24 @@
 @echo off
+REM Check if the PROGRAM_PATH argument is provided
+if "%~1"=="" (
+    echo Usage: %0 ^<PROGRAM_PATH^>
+    exit /b 1
+)
+REM Check if the PROGRAM_PATH argument is provided
+if "%~2"=="" (
+    echo Usage: %0 ^<PROGRAM_PATH^> ^<PROGRAM_FILE^>
+    exit /b 1
+)
+
 set PROGRAM_NAME=traffic-generator.exe
-set PROGRAM_PATH="C:\Users\Administrator\Desktop\traffic-generator.exe"
-set PROGRAM_OPTIONS=vensim C:\Users\Administrator\Desktop\traffic.csv
+set PROGRAM_PATH=%~1
+set PROGRAM_CMD=continuous
+set PROGRAM_FILE=%~2
 
 tasklist /FI "IMAGENAME eq %PROGRAM_NAME%" 2>NUL | find /I "%PROGRAM_NAME%" >NUL
 if errorlevel 1 (
     echo %PROGRAM_NAME% is not running. Starting it now with options...
-    start "" %PROGRAM_PATH% %PROGRAM_OPTIONS%
+    start "" %PROGRAM_PATH%%PROGRAM_NAME %PROGRAM_CMD% %PROGRAM_FILE%
 ) else (
     echo %PROGRAM_NAME% is running.
 )
