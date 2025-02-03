@@ -21,7 +21,7 @@ PID=$(ps aux | grep "$PROGRAM_NAME_GREP" | awk '{print $2}')
 
 if [ -z "$PID" ]; then 
     echo "$PROGRAM_NAME is not running. Starting it now..."
-    nohup "$PROGRAM_PATH$PROGRAM_NAME"  $PROGRAM_CMD $PROGRAM_PATH$PROGRAM_FILE &> /dev/null &
+    nohup "$PROGRAM_PATH/$PROGRAM_NAME"  $PROGRAM_CMD "$PROGRAM_PATH/$PROGRAM_FILE" &> /dev/null &
     PID=$(ps aux | grep "[t]raffic-generator" | awk '{print $2}')
 
 fi
