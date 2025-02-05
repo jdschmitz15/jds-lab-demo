@@ -13,7 +13,7 @@ elif [ -z "2" ]; then
 fi
 
 PROGRAM_PATH=$1
-PROGRAM_FILE=$1
+PROGRAM_FILE=$2
 
 # Check if the program is running
 #
