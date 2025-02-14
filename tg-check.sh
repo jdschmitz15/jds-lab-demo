@@ -31,5 +31,3 @@ if [ -z "$PID" ]; then
     exit 1
 fi
 echo "$PROGRAM_NAME is running. ID $PID"
-
-# sudo crontab -l 2>/dev/null || echo ""; echo "*/5 * * * *  /home/<user>/tg-check.sh > /dev/null 2>&1" | sudo crontab -

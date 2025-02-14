@@ -18,7 +18,7 @@ set PROGRAM_FILE=%~2
 tasklist /FI "IMAGENAME eq %PROGRAM_NAME%" 2>NUL | find /I "%PROGRAM_NAME%" >NUL
 if errorlevel 1 (
     echo %PROGRAM_NAME% is not running. Starting it now with options...
-    start "" %PROGRAM_PATH%%PROGRAM_NAME %PROGRAM_CMD% %PROGRAM_FILE%
+    start "" %PROGRAM_PATH%/%PROGRAM_NAME %PROGRAM_CMD% %PROGRAM_FILE%
 ) else (
     echo %PROGRAM_NAME% is running.
 )
