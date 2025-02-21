@@ -1762,8 +1762,6 @@ src_ip,src_hostname,src_process,src_service,src_username,dst_ip,dst_hostname,dst
 192.168.1.4,,,,,192.168.2.71,,,22,6,,,,potentially_blocked
 192.168.1.4,,,,,192.168.2.72,,,22,6,,,,potentially_blocked
 192.168.1.4,,,,,10.2.2.42,,,22,6,,,,potentially_blocked
-192.168.1.4,,,,,10.2.2.42,,,22,6,,,,potentially_blocked
-192.168.1.4,,,,,10.2.2.42,,,22,6,,,,potentially_blocked
 192.168.2.4,,,,,192.168.2.68,,,8888,6,,,,potentially_blocked
 192.168.2.4,,,,,192.168.2.69,,,8888,6,,,,potentially_blocked
 192.168.2.4,,,,,192.168.2.70,,,8888,6,,,,potentially_blocked
