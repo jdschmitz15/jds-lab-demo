@@ -1761,7 +1761,7 @@ src_ip,src_hostname,src_process,src_service,src_username,dst_ip,dst_hostname,dst
 192.168.1.4,,,,,192.168.2.70,,,22,6,,,,potentially_blocked
 192.168.1.4,,,,,192.168.2.71,,,22,6,,,,potentially_blocked
 192.168.1.4,,,,,192.168.2.72,,,22,6,,,,potentially_blocked
-192.168.1.4,,,,,10.2.2.42,,,22,6,,,,potentially_blocked
+192.168.1.4,,,,,10.2.2.42,,,22,6,,,,potentially_blocked	
 192.168.2.4,,,,,192.168.2.68,,,8888,6,,,,potentially_blocked
 192.168.2.4,,,,,192.168.2.69,,,8888,6,,,,potentially_blocked
 192.168.2.4,,,,,192.168.2.70,,,8888,6,,,,potentially_blocked
@@ -1796,5 +1796,13 @@ src_ip,src_hostname,src_process,src_service,src_username,dst_ip,dst_hostname,dst
 10.1.2.4,,,,,10.1.2.7,,,1443,6,,,,potentially_blocked
 10.1.2.5,,,,,10.1.2.7,,,1443,6,,,,potentially_blocked
 10.1.2.7,,,,,192.168.2.71,,,1521,6,,,,potentially_blocked
-
+10.1.1.4,,,,,10.1.1.5,,,22,6,,,,potentially_blocked
+10.1.1.4,,,,,10.1.1.6,,,22,6,,,,potentially_blocked
+10.1.1.4,,,,,10.1.1.7,,,22,6,,,,potentially_blocked
+10.1.1.4,,,,,10.1.2.4,,,22,6,,,,potentially_blocked
+10.1.1.4,,,,,10.1.2.5,,,22,6,,,,potentially_blocked
+10.1.1.4,,,,,10.1.2.6,,,22,6,,,,potentially_blocked
+10.1.1.4,,,,,10.1.2.7,,,22,6,,,,potentially_blocked
+10.1.1.4,,,,,10.1.2.8,,,22,6,,,,potentially_blocked
+10.1.2.4,,,,,10.1.1.4,,,445,6,,,,potentially_blocked
 
